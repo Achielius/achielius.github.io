@@ -19,18 +19,18 @@
   }
   .portcontainer {
     max-width: 80%;
-    margin: auto; /* Center the container horizontally */
+    margin: auto;
     padding: 20px;
     display: flex;
-    flex-wrap: wrap; /* Allow columns to wrap */
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute columns evenly */
   }
   .column {
-    flex: 1 1 300px; /* Minimum width of 300px for each column */
+    flex: 0 1 calc(33.33% - 20px); /* Maximum three columns per row with margin */
     padding: 20px;
     border: 1px solid #ccc;
-    margin: 0 10px;
     box-sizing: border-box;
-    margin-bottom: 20px; /* Add margin between columns */
+    margin-bottom: 20px;
   }
 
   .column a img {
@@ -77,10 +77,18 @@
   
   <div class="column">
     <a href="https://app.powerbi.com/view?r=eyJrIjoiMTRhYTM0YWItOGU1Yy00MDM3LTk1NTEtMjEwYmY5NmVhZDI1IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">
-        <img src="/img/FP20_HR_Analysis.png" alt="Thumbnail 3">
+        <img src="/img/FP20_HR_Analysis.png" alt="FP20 Analytics HR Analysis">
       </a>
         <h2>FP20 Analytics HR Analysis</h2>
         <p>Data Source: <a href="https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/fp20-analytics-april-2024">FP20 Analytics HR Analysis</a></p>
+  </div>
+
+  <div class="column">
+    <a href="https://app.powerbi.com/view?r=eyJrIjoiMzcwMjMyN2YtNjY2Mi00OGE4LWJiMTktNGQ5MDYxODQ2NTM1IiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">
+        <img src="/img/techport.png" alt="Onyx Data May 2024 Challenge">
+      </a>
+        <h2>Onyx Data May 2024 Challenge</h2>
+        <p>Data Source: <a href="https://zoomcharts.com/en/microsoft-power-bi-custom-visuals/challenges/onyx-data-may-2024">Onyx Data May 2024 Challenge</a></p>
   </div>
 </div>
   
